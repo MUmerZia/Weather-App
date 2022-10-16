@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 </head>
 
 <body>
-    <script>src= "http://openweathermap.org/img/wn/10d@2x.png"</script>
+    <script src= "http://openweathermap.org/img/wn/10d@2x.png"> </script>
     <div class="card">
         <div >
             <form onsubmit="getweather() ;return false" class="search">
@@ -26,11 +27,13 @@
         </div>
         <div class="weather" id="weather_name">
             <h2 class="city" >Weather: </h2>
-            <img id = "icon"src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+            <img id = "icon" alt="" class="icon">
             <h1 class="temp">Temperature:</h1>
             <div class="description">Description:</div>
             <div class="humidity">humidity:</div>
             <div class="wind">Wind Speed:</div>    
+            <div class="date">Date:</div>    
+            <div class="time">Time:</div>    
         </div>
     </div>
 </body>
